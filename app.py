@@ -22,7 +22,7 @@ def main():
     Recepies = ['None'] + json.load(open('ingredients.json','r'))
     Recepies_duplicate = Recepies.copy()
 
-    st.title("Pizza Predictor")
+    st.markdown("<h1 style='text-align:center'> 🍕🍕 DeepPizza 🍕🍕</h1>", unsafe_allow_html=True)
     Recepies_list_ip=np.zeros((1,len(Recepies)-1))
     html_temp = """
     <div style="background:#fa8e72 ;padding:10px">
